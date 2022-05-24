@@ -54,5 +54,12 @@ SELECT * FROM payment;
 SELECT customer_id, SUM(amount) FROM payment GROUP BY customer_id ORDER BY SUM(amount) DESC
 
 
+-- Alt Sorgular ve JOIN Kullanımı
 
 
+-- SELECT author.first_name,author.last_name,book.title FROM author
+-- INNER JOIN book ON book.author_id=author.id
+-- WHERE page_number>
+-- (
+-- SELECT AVG(page_number) FROM book
+-- )
